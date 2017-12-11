@@ -1,0 +1,171 @@
+body{
+	margin: 0px;       
+	padding:0px;
+	font-size: 16px;    /*body*/
+	color: black;
+
+}
+
+#header-nav{
+	background-color:#d3d3d3;
+	opacity: .8;
+	border-radius:0px;
+	border:0px;           /*header part containing Food,LC and button.*/
+	margin: 0px;
+	padding: 0px;
+	width:100vw;
+}  
+
+
+#brand-name
+{   font-weight: bold;
+	font-size: 29px;         /*Food LC*/
+    color: black;
+    vertical-align: center;
+	}
+
+#toggle-button{
+	border: solid black 2px; /*button with three icon-bars */
+	padding: 2px;
+
+}
+button.navbar-toggle .icon-bar{
+	border: solid black 1px;      /*styling button*/
+	margin-bottom:2px;
+}
+#chicken,#beef,#sushi{
+	border:solid black 1px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0px;
+
+
+	
+}
+#Menu{
+	width: 100%;
+	padding:0px;
+	margin:0px;
+
+}
+#Menu .container{
+	padding:0px;
+
+}
+#Menu .container .row{
+	
+padding: 0px;
+margin: 0px;
+}
+
+
+#Menu .row a:hover,#Menu .row a:link{
+	text-decoration: none;
+	color:black;
+}
+
+#Menu .row  p{
+	vertical-align: center;
+	font-size:1.3vw;
+	height: 100%;
+	margin: 0px;
+	color: black;
+}
+#Menu .row  a{
+	width:100%
+}
+
+#content >p {
+	text-align: center;
+	font-weight: bold;
+	font-size:30px;
+	
+}
+
+#content .col-xs-12{
+	background-color: #d3d3d3;
+	
+	border: solid black 1px;
+	margin-bottom:6px;
+
+
+}
+#content.container{
+	
+	width:100vw;
+	box-sizing: border-box;
+	text-align: center;
+	margin:0px;
+	padding: 0px
+}
+
+#content >p{
+	width:100%;
+	font-weight: bold;
+
+}
+
+#content .colu-title{
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#content .col-xs-12 p:nth-child(2){
+	text-align: left;
+}
+#content .row {
+margin:0px;
+padding:2vw;
+}
+
+
+
+@media (max-width:767px){
+
+#Menu .row  p{
+	
+	font-size: 3vw;
+}
+
+
+#Menu.collapse.navbar-collapse{
+		width: 100vw;
+	}
+
+
+}
+
+@media (max-width: 479px)
+{
+
+#Menu .row  p{
+	
+	font-size: 5vw;
+
+}
+#content.container >p{
+	font-size: 4.5vw;
+	}
+}
+
+@media (min-width:768px){
+	#Menu.collapse.navbar-collapse{
+		visibility: hidden!important;
+		display: none;
+		height:1px;
+	}
+
+	#content.container >p{
+		margin-top:-5.5vw;
+	}
+}
+
+#content >p {
+font-size:4vw;
+	
+}
+}
+#content #colu1,#content #colu2,#content #colu3{
+border: solid black 1px;
+
+}
