@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bulb project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+        <body>
+        	<script >
+        		function button_click(){
+                    var pic=document.getElementById("bulb");
+
+                      if(pic.src.match("off-light.png")){
+                      pic.src="on-light.png";
+                      document.getElementById("status").innerHTML="Bulb is ON";
+                      }
+                      else{
+                      pic.src="off-light.png";
+                      document.getElementById("status").innerHTML="Bulb is Off";
+                      }
+                  }
+                  
+        	
+            </script>
+        	<h1>This is a simple bulb project</h1>
+        	<p id="status">Bulb is OFF</p>
+        	<img id="bulb" onclick="button_click()" src="off-light.png">
+        	<button id="butt" type="button" onclick="button_click()">Click Me!</button>
+        </body>
+        </html>

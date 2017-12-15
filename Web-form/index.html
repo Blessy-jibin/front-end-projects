@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Form</title>
+        <link rel='stylesheet' type='text/css' href='style.css'/>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Lobster|Pangolin" rel="stylesheet">
+    </head>
+    <body>
+        <header id="head"><h1>Contact Us!</h1></header>
+        <form>
+          First-name:<br> <input type="text" name="firstname" value="firstname" onfocus="if (this.value=='firstname') this.value='';"/><br>
+           Last-name: <br><input type="text" name="lastname" value="lastname" onfocus="if (this.value=='lastname') this.value='';"/><br>
+        Email-address:<br><input type="text" name="email" value="email-address" onfocus="if (this.value=='email-address') this.value='';"/>
+                    </form>
+<br><br>
+     <form>
+        Message:<br>
+        <textarea name="msg">
+        </textarea><br>
+        Sex:
+        <input type="radio" name="sex" value="male">Male
+        <input type="radio" name="sex" value="female">Female<br><br><br>
+        <input type="checkbox" name="notify" value="notify">I want the notifications of the site<br>
+        <input type="checkbox" name="notify" value="nonotify">I dont want the notifications of the site<br>
+        <input type="submit" value="Submit">
+     </form>               
+    </body>
+</html>
