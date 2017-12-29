@@ -1,5 +1,7 @@
 # front-end-projects
-My front end development projects
+
+##My front end development projects
+
 Clock: https://blessy-jibin.github.io/front-end-projects/clock/
 
 Responsive layout without bootstrap: https://blessy-jibin.github.io/front-end-projects/responsive%20layout%20without%20bootstrap/
