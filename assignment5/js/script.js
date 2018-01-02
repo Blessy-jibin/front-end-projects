@@ -42,14 +42,19 @@ var showLoading = function (selector) {
 // Return substitute of '{{propName}}'
 // with propValue in given 'string'
 var insertProperty = function (string, propName, propValue) {
+  console.log(string, propName, propValue);
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
+
+      console.log(string);
+
   return string;
 };
 
 // Remove the class 'active' from home and switch to Menu button
 var switchMenuToActive = function () {
+  
   // Remove 'active' from home button
   var classes = document.querySelector("#navHomeButton").className;
   classes = classes.replace(new RegExp("active", "g"), "");
@@ -109,9 +114,12 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
     var chosenCategoryShortName=chooseRandomCategory(categories).short_name;
+        chosenCategoryShortName="'"+chosenCategoryShortName+"'"
     var homeHtmlToInsertIntoMainPage =
-                               insertProperty(homeHtml,"randomCategoryShortName","'"+chosenCategoryShortName+"'");
-      insertHtml("#main-content",homeHtml);
+                               insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName);
+      insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
+
+      console.log('-------------',homeHtml)
 
 
         },false);
@@ -180,6 +188,7 @@ dc.loadMenuCategories = function () {
 // 'categoryShort' is a short_name for a category
 
 dc.loadMenuItems = function (categoryShort) {
+  console.log(menuItemsUrl,categoryShort);
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     menuItemsUrl + categoryShort,
