@@ -1,0 +1,53 @@
+
+@media only screen and (max-width: 767px){
+.navbar-inverse {
+    background: none;
+    border: none;
+}
+.navbar-toggle {
+    background-color: #333;
+}
+}
+
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    max-width: 100vw;
+}
+
+
+header{
+	padding:235px 0px;
+}
+
+.testimonial-content{
+	height: 500px;
+}
+.green-btn 
+{ background: #178A27; }
+
+.green-btn:hover { background: #449D44; }
+
+.feature-content>img{
+    width:100%;
+}
+.blog-content>img{
+    width:100%;
+}
+.testimonial-content>img{
+width:100%;
+}
+.feature-content-link {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
