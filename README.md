@@ -4,6 +4,8 @@
 
 Clock: https://blessy-jibin.github.io/front-end-projects/clock/
 
+One age responsive layout-https://blessy-jibin.github.io/front-end-projects/one%20page%20responsive%20layout/
+
 Responsive layout without bootstrap: https://blessy-jibin.github.io/front-end-projects/responsive%20layout%20without%20bootstrap/
 
 Responsive layout with css bootstarp: https://blessy-jibin.github.io/front-end-projects/responsive%20layout%20with%20css%20bootstrap/
